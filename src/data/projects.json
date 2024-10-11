@@ -1,0 +1,23 @@
+[
+    {
+        "title": "project A",
+        "imageSrc": "projects/project.jpg",
+        "skills" : ["React","Flutter","Node"],
+        "source":"https://github.com/yohannes-mengistie",
+        "description":"react project"
+    },
+    {
+        "title": "project B",
+        "imageSrc": "projects/project.jpg",
+        "skills" : ["React","Flutter","Node"],
+        "source":"https://github.com/yohannes-mengistie",
+        "description":"react project"
+    },
+    {
+        "title": "project C",
+        "imageSrc": "projects/project.jpg",
+        "skills" : ["React","Flutter","Node"],
+        "source":"https://github.com/yohannes-mengistie",
+        "description":"react project"
+    }
+]

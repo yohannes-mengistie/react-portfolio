@@ -1,12 +1,20 @@
-import React from "react"
+import React, {useState} from "react"
 import styles from './Navbar.module.css';
+import getImageUrl from "../../utl";
+
+
 
 export default function Navbar(){
+    const [menu,setMenu] = useState(false);
+    function toggle(){
+        setMenu(prevData => !prevData)
+    }
     return (
     <nav className={styles.navbar}>
-        <a className={styles.title} href="/">Portfolio</a>
+        <a className={styles.title} href="/">Yohannes</a>
         <div className={styles.menu}>
-            <ul className={styles.menuItems}>
+            <img className={styles.menuBtn} src={menu ? getImageUrl("nav/close-menu.jpg"): getImageUrl("nav/menuIcon.jpg")} onClick={toggle} />
+            <ul className={`${styles.menuItems} ${menu && styles.menuOpen}`} onClick={toggle}>
                 <li>
                     <a href="#about">About</a>
                 </li>
